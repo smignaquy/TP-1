@@ -1,15 +1,7 @@
 ############################# NO TOCAR ESTE CÓDIGO ############################
 from random import randint
 
-def sacar_carta():
-    '''
-    Esta función toma una carta de un mazo de forma aleatoria. La carta está numerada del 1 al 10 (inclusive).
-
-    params:
-        Esta función no tiene parámetros de entrada.
-    out:
-        carta: int. El número de la carta sacada.
-    '''
+def sacar_carta() ->int:
     carta = randint(1,10)
     return carta
 
@@ -20,10 +12,19 @@ def sacar_carta():
 #En la consola se vería:    8
 
 ########################### AQUÍ COMIENZA TU CÓDGIO ###########################
+mazo = sacar_carta
+jugador = 0
+crupier = 0
+jugador = jugador + mazo
+while jugador < 21: # Repetición del juego
+    print(f'usted tiene{jugador}')
+    respuesta = input('quiere pedir otra carta(si o no)?  ')
+    while respuesta == "si": # Turno del jugador
+        jugador = jugador + mazo
+        print(f'usted tiene{jugador}')
 
-while(): # Repetición del juego
-    #Tu código va acá
-    while(): # Turno del jugador
-        #Tu código va acá
+
+
+        jugador = jugador + mazo
     while(): # Turno del crupier
-    	#Tu código va acá
+        print("hola")
