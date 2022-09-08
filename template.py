@@ -38,14 +38,14 @@ while pregunta == "si":
             print(f"Te plantaste en {jugador}")
 
         mazo = sacar_carta()
-        crupier = jugador + mazo
+        crupier = crupier + mazo
 
         #se le informa al jugador cuanto tiene el crupier
         print(f'Crupier tiene: {crupier}')
         
         while ((crupier < 16) and (crupier < 21)) or (crupier < jugador): # Turno del crupier
             mazo = sacar_carta()
-            crupier = jugador + mazo
+            crupier = crupier + mazo
             print(f'Crupier tiene: {crupier}')
 
         if (jugador < 21) and (crupier < 21):
